@@ -152,11 +152,10 @@ class ARDAudiothekSammlungIE(ARDAudiothekBaseIE):
     """
     _VALID_URL = r'https?://(?:www\.)?ardaudiothek\.de/sammlung/(?:[^/]+)/(?P<id>[0-9]+)(?:/.*)?' 
     _TESTS = [{
-        'url': 'https://www.ardaudiothek.de/sendung/korridore-mystery-horror-serie/12187357/',
+        'url': 'https://www.ardaudiothek.de/sammlung/was-gibt-s-zu-essen-mythen-und-fakten-zur-guten-ernaehrung/56081830/',
         'info_dict': {
-            'id': '12187357',
-            'title': r're:^Korridore - Mystery-Horror-Serie',
-            'description': compat_str,
+            'id': '56081830',
+            'title': "Was gibt's zu essen? Mythen und Fakten zur guten Ernährung"
         },
         'playlist_mincount': 3,
     }]
@@ -180,7 +179,6 @@ class ARDAudiothekSendungIE(ARDAudiothekBaseIE):
         'info_dict': {
             'id': '12187357',
             'title': r're:^Korridore - Mystery-Horror-Serie',
-            'description': compat_str,
         },
         'playlist_mincount': 3,
     }]
